@@ -25,6 +25,11 @@ export const counterReducer = (state=initialState,action:ActionPayloadType) => {
               ...state,
                 count: state.count - payload
             }
+        case "SET_COUNTER":
+            return{
+                ...state,
+                count: payload
+            }
         default:
             return state;
     }

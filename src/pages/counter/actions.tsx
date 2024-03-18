@@ -11,3 +11,9 @@ export const Decrement = (payload: number) => (
         payload
     }
 )
+export const SetCounter = (payload: number) => (
+    {
+        type: 'SET_COUNTER',
+        payload
+    }
+)
